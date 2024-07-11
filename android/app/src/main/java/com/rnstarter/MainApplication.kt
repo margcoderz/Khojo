@@ -1,4 +1,4 @@
-package com.khojo
+package com.rnstarter
 
 import android.app.Application
 import com.facebook.react.PackageList
