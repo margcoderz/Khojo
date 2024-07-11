@@ -7457,59 +7457,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"khojo@workspace:.":
-  version: 0.0.0-use.local
-  resolution: "khojo@workspace:."
-  dependencies:
-    "@babel/core": ^7.20.0
-    "@babel/preset-env": ^7.20.0
-    "@babel/runtime": ^7.20.0
-    "@react-native-async-storage/async-storage": ^1.23.1
-    "@react-native-community/datetimepicker": ^8.1.1
-    "@react-native/babel-preset": 0.74.84
-    "@react-native/eslint-config": 0.74.84
-    "@react-native/metro-config": 0.74.84
-    "@react-native/typescript-config": 0.74.84
-    "@react-navigation/native": ^6.1.17
-    "@react-navigation/native-stack": ^6.9.26
-    "@reduxjs/toolkit": ^2.2.5
-    "@types/react": ^18.2.6
-    "@types/react-native-vector-icons": ^6.4.18
-    "@types/react-test-renderer": ^18.0.0
-    axios: ^1.7.2
-    babel-jest: ^29.6.3
-    eslint: ^8.19.0
-    jest: ^29.6.3
-    json-server: ^1.0.0-beta.1
-    metro: ^0.80.9
-    metro-core: ^0.80.9
-    metro-react-native-babel-preset: ^0.77.0
-    moment: ^2.30.1
-    moti: ^0.29.0
-    prettier: 2.8.8
-    react: 18.2.0
-    react-hook-form: ^7.51.5
-    react-native: 0.74.2
-    react-native-country-picker-modal: ^2.0.0
-    react-native-gesture-handler: ^2.17.1
-    react-native-indicators: ^0.17.0
-    react-native-keyboard-aware-scroll-view: ^0.9.5
-    react-native-localize: ^3.2.0
-    react-native-modal: ^13.0.1
-    react-native-modal-datetime-picker: ^17.1.0
-    react-native-pixel-perfect: ^1.0.2
-    react-native-reanimated: ^3.12.1
-    react-native-rename: ^3.2.14
-    react-native-safe-area-context: ^4.10.4
-    react-native-screens: ^3.31.1
-    react-native-vector-icons: ^10.1.0
-    react-redux: ^9.1.2
-    react-test-renderer: 18.2.0
-    redux-persist: ^6.0.0
-    typescript: 5.0.4
-  languageName: unknown
-  linkType: soft
-
 "kind-of@npm:^6.0.2":
   version: 6.0.3
   resolution: "kind-of@npm:6.0.3"
@@ -9834,6 +9781,59 @@ __metadata:
   checksum: 3ea587b981a19016297edb96d1ffe48af7e6af69660e3b371dbfc73722a73a0b0e9be5c88089fbeeb866c389c1098e07f64929c7414290504b855f54f901ab10
   languageName: node
   linkType: hard
+
+"rnstarter@workspace:.":
+  version: 0.0.0-use.local
+  resolution: "rnstarter@workspace:."
+  dependencies:
+    "@babel/core": ^7.20.0
+    "@babel/preset-env": ^7.20.0
+    "@babel/runtime": ^7.20.0
+    "@react-native-async-storage/async-storage": ^1.23.1
+    "@react-native-community/datetimepicker": ^8.1.1
+    "@react-native/babel-preset": 0.74.84
+    "@react-native/eslint-config": 0.74.84
+    "@react-native/metro-config": 0.74.84
+    "@react-native/typescript-config": 0.74.84
+    "@react-navigation/native": ^6.1.17
+    "@react-navigation/native-stack": ^6.9.26
+    "@reduxjs/toolkit": ^2.2.5
+    "@types/react": ^18.2.6
+    "@types/react-native-vector-icons": ^6.4.18
+    "@types/react-test-renderer": ^18.0.0
+    axios: ^1.7.2
+    babel-jest: ^29.6.3
+    eslint: ^8.19.0
+    jest: ^29.6.3
+    json-server: ^1.0.0-beta.1
+    metro: ^0.80.9
+    metro-core: ^0.80.9
+    metro-react-native-babel-preset: ^0.77.0
+    moment: ^2.30.1
+    moti: ^0.29.0
+    prettier: 2.8.8
+    react: 18.2.0
+    react-hook-form: ^7.51.5
+    react-native: 0.74.2
+    react-native-country-picker-modal: ^2.0.0
+    react-native-gesture-handler: ^2.17.1
+    react-native-indicators: ^0.17.0
+    react-native-keyboard-aware-scroll-view: ^0.9.5
+    react-native-localize: ^3.2.0
+    react-native-modal: ^13.0.1
+    react-native-modal-datetime-picker: ^17.1.0
+    react-native-pixel-perfect: ^1.0.2
+    react-native-reanimated: ^3.12.1
+    react-native-rename: ^3.2.14
+    react-native-safe-area-context: ^4.10.4
+    react-native-screens: ^3.31.1
+    react-native-vector-icons: ^10.1.0
+    react-redux: ^9.1.2
+    react-test-renderer: 18.2.0
+    redux-persist: ^6.0.0
+    typescript: 5.0.4
+  languageName: unknown
+  linkType: soft
 
 "run-parallel@npm:^1.1.9":
   version: 1.2.0
