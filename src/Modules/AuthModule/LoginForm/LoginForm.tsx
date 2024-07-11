@@ -21,7 +21,7 @@ function LoginForm() {
     <Fragment>
       <Block height={scaler(50)} />
       <Block
-        backgroundColor={themeColors.backgroundColor}
+        backgroundColor={themeColors.background}
         flex={1}
         marginHorizontal={scaler(16)}>
         <Block marginBottom={scaler(20)}>
