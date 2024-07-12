@@ -1,5 +1,4 @@
 import React from 'react';
-import LoginForm from '../../Modules/AuthModule/LoginForm/LoginForm';
 import Block from '../../Components/Block/Block';
 import Container from '../../Components/Container/Container';
 import Picture from '../../Components/Picture/Picture';
@@ -9,7 +8,7 @@ import Body from '../../Components/Body/Body';
 import {useSelector} from 'react-redux';
 import {RootState} from '../../Store/Store';
 
-const LoginScreen = () => {
+const SettingsScreen = () => {
   const themeColors = useSelector((state: RootState) => state.theme.colors);
 
   return (
@@ -24,11 +23,10 @@ const LoginScreen = () => {
               width={scaler(150)}
             />
           </Block>
-          <LoginForm />
         </Block>
       </Body>
     </Container>
   );
 };
 
-export default LoginScreen;
+export default SettingsScreen;

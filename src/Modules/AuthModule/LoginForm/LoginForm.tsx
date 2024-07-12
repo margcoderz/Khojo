@@ -6,59 +6,88 @@ import scaler from '../../../Utils/scaler';
 import FormInput from '../../../Components/FormInput/FormInput';
 import Touch from '../../../Components/Touch/Touch';
 import Typography from '../../../Components/Typography/Typography';
-import {useSelector} from 'react-redux';
+import {useDispatch, useSelector} from 'react-redux';
 import {RootState} from '../../../Store/Store';
+import {getLogin, setLogin} from './LoginSlice';
+import {Alert} from 'react-native';
 
 function LoginForm() {
-  const {control} = useForm({
+  const {control, handleSubmit} = useForm({
     defaultValues: {
-      price: '',
+      email: '',
+      password: '',
     },
     mode: 'onChange',
   });
+  const dispatch = useDispatch();
+  const loginData = useSelector((state: RootState) => getLogin(state));
+  console.log(loginData);
+  // const [data, setData] = useState<{
+  //   email: string;
+  //   password: string;
+  //   isLogin: boolean;
+  // }>(loginData);
   const themeColors = useSelector((state: RootState) => state.theme.colors);
   return (
     <Fragment>
-      <Block height={scaler(50)} />
       <Block
-        backgroundColor={themeColors.background}
+        backgroundColor={themeColors.accent}
         flex={1}
         marginHorizontal={scaler(16)}>
-        <Block marginBottom={scaler(20)}>
+        <Block>
           <FormInput
             textInputProps={{
-              placeholder: 'Email',
-              maxLength: 8,
+              placeholder: 'Enter your email',
+              //  maxLength: 8,
             }}
             // setFocus={setFocus}
-            label="Email"
+            //  label="Email"
             control={control}
-            name={'Email'}
+            name={'email'}
             type={'email'}
             require={true}
           />
+          <Block height={scaler(20)} />
           <FormInput
             right={true}
             textInputProps={{
-              placeholder: 'Password',
-              maxLength: 8,
+              placeholder: 'Emter your password',
             }}
             // setFocus={setFocus}
-            label="Password"
+            // label="Password"
             control={control}
             name={'password'}
             type={'password'}
             require={true}
           />
         </Block>
-
+        <Block height={scaler(40)} />
         <Block marginHorizontal={scaler(26)}>
           <Touch
             backgroundColor={themeColors.primary}
-            borderRadius={scaler(8)}
+            borderRadius={scaler(15)}
             padding={scaler(10)}
-            onPress={() => {}}>
-            <Typography textAlign="center">login</Typography>
+            onPress={handleSubmit(values => {
+              if (
+                loginData?.email === values?.email &&
+                loginData?.password === values?.password
+              ) {
+                dispatch(setLogin({...values, isLogin: true}));
+              } else {
+                Alert.alert('You have entered wrong email or password');
+              }
+
+              // setData({
+              //   ...values,
+              //   isLogin: true,
+              // });
+            })}>
+            <Typography
+              fontSize={scaler(16)}
+              color={'white'}
+              textAlign="center">
+              Log In
+            </Typography>
           </Touch>
         </Block>
       </Block>

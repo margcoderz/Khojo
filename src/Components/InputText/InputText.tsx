@@ -90,9 +90,9 @@ function InputText(props: InputTextProps) {
         flexDirection={'row'}
         borderWidth={borderWidth}
         borderColor={borderColor}
-        borderRadius={scaler(8)}
+        borderRadius={scaler(20)}
         minHeight={scaler(50)}
-        backgroundColor={themeColors.surface}
+        backgroundColor={'#aee1da'}
         overflow="hidden">
         {left}
         <Block paddingVertical={scaler(8)} flex={1} justifyContent={'center'}>

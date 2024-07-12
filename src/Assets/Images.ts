@@ -1,3 +1,3 @@
-export const Icons = {
-  marglogo: require('./Icons/marg-logo.png'),
+export const images = {
+  logo: require('./Images/loginBg.png'),
 };

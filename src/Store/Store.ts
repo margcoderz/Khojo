@@ -1,9 +1,11 @@
 import {configureStore} from '@reduxjs/toolkit';
 import themeSlice from '../Modules/ThemeModule/ThemeSlice/ThemeSlice';
 import {posts} from './ApiSlice';
+import LoginSlice from '../Modules/AuthModule/LoginForm/LoginSlice';
 
 const store = configureStore({
   reducer: {
+    login: LoginSlice,
     theme: themeSlice,
     [posts.reducerPath]: posts.reducer,
   },

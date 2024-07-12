@@ -3,8 +3,8 @@ import {THEME_TYPE} from '../Types/ThemeTypes';
 export const DayTheme: THEME_TYPE = {
   type: 'light',
   colors: {
-    primary: '#3a86ff',
-    accent: '#00b4d8',
+    primary: '#39938e',
+    accent: '#7fcbc3',
     background: '#f8f9fa',
     surface: '#ffffff',
     error: '#e63946',

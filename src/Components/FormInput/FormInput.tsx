@@ -8,7 +8,6 @@ import InputText from '../InputText/InputText';
 import {INPUT_TYPES, SELECT_OPTIONS} from '../../Utils/Types';
 import scaler from '../../Utils/scaler';
 import CallingCode from '../CallingCode/CallingCode';
-import InputSelect from '../InputSelect/InputSelect';
 import SelectComplete from '../SelectComplete/SelectComplete';
 import InputDate from '../InputDate/InputDate';
 import InputTime from '../InputTime/InputTime';

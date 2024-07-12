@@ -36,7 +36,7 @@ function Container(props: ContainerProps) {
       if (Platform.OS === 'android') {
         StatusBar.setTranslucent(fullScreen ?? false);
         StatusBar.setBackgroundColor(
-          statusBarBackgroundColor ?? themeColors.adaptivePrimary,
+          statusBarBackgroundColor ?? themeColors.accent,
         );
       }
       StatusBar.setBarStyle(statusBarStyle);
@@ -44,7 +44,7 @@ function Container(props: ContainerProps) {
       fullScreen,
       statusBarBackgroundColor,
       statusBarStyle,
-      themeColors.adaptivePrimary,
+      themeColors.accent,
     ]),
   );
 
